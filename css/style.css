@@ -1,0 +1,14 @@
+header{
+    background-color: #268ecd;  
+    padding: 10px 0;  
+}
+.logo{
+    padding: 0;
+    
+}
+footer{
+    background-color: #268ecd;
+    padding: 25px;
+    color:white;
+    font-size: 12px;
+}
