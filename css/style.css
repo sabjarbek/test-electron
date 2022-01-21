@@ -30,6 +30,26 @@ section.content-s{
 .discription h3{
     color:#333;
     font-size: 13px;
+    display: contents;
+}
+.discription a{
+    color: #999;
+    font-size: 13px;
+    text-decoration: none;
+}
+.discription a:hover{
+    text-decoration: underline;
+    color: #268ecd;
+}
+.photo-wrap{
+    padding: 19px 28px;
+    margin-bottom:35px ;
+}
+.photo-wrap h3{
+    font-size: 14px;
+    color:#333;
+    font-weight: normal;
+    padding-bottom: 12px;
 }
 .recommend h4, .add-message h4{
     margin-bottom: 15px;
@@ -40,6 +60,22 @@ section.content-s{
 .item{
     padding: 25px;
     margin-bottom: 35px;
+}
+.name a{
+    color:278ece;
+    font-weight:bold;
+    text-decoration:none;
+    font-size: 14px;
+}
+.add-message input{
+    margin-bottom: 13px;
+}
+.add-message textarea{
+    margin-bottom: 28px;
+}
+.add-message button{
+    width: 100%;
+    max-width: 150px;
 }
 footer{
     background-color: #268ecd;

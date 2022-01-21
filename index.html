@@ -23,7 +23,7 @@
             </div>
             <div class="col-sm-4">
               <form >
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">                
+                <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Search">                
               </form>
             </div>
         </div>
@@ -35,8 +35,13 @@
           <div class="col-md-7">
             <div class="discription shadow-sm rounded card">
               <h2>Электрон Вебов</h2>
-              <p>Изменить статус</p>
+              <a href="#">Изменить статус</a>
+              <hr/>
               <table>
+                <tr>
+                  <td><span>Дата рождение:</span></td>
+                  <td><span style="color: #278ece;">23 сентября 1988 г.</span></td>
+                </tr>
                 <tr>
                   <td><span>Семейное положение:</span></td>
                   <td><span style="color: #278ece;">женат</span></td>
@@ -51,7 +56,12 @@
                 </tr>
               </table>
               <div class="intro-text">
+                <div class="row">
+                <div class="col-3">
                 <h3>Немного о себе</h3>
+                </div>
+                <div class="col-9"><hr/></div>
+              </div>
                 <p>
                   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but.
                 </p>
@@ -76,12 +86,25 @@
         </div>
       </div>
     </section>
+    <section class="photo">
+      <div class="container">
+          <div class="row">
+            <div class="col-12">
+              
+              <div class="border rounded shadow photo-wrap">
+                <h3>Фотографии Электрона</h3>
+              <div class="d-flex justify-content-between  "><img src="test-electron/desktop-assets/photo_1.jpg"><img src="test-electron/desktop-assets/photo_2.jpg"><img src="test-electron/desktop-assets/photo_3.jpg"><img src="test-electron/desktop-assets/photo_4.jpg"></div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
     <section class="recommend">
       <div class="container">
         <h4>Запись на Вашей стене</h4>
         <div class="row">
           <div class="col-md-12">
-            <div class="shadow-sm rounded card item">
+            <div class="shadow rounded card item">
               <div class="commet-photo">
                 <div class="row">
               <div class="col-md-1">
@@ -101,7 +124,7 @@
                 </p>
               </div>
               </div>
-              <div class="shadow-sm rounded card item">
+              <div class="shadow rounded card item">
                 <div class="commet-photo">
                   <div class="row">
                 <div class="col-md-1">
@@ -132,10 +155,10 @@
         <h4>Добавить запись</h4>
         <div class="row">
           <div class="col-12">
-            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Ваше имя">
+            <input type="text" class="form-control shadow" id="exampleFormControlInput1" placeholder="Ваше имя">
           </div>
           <div class="col-12">
-            <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Текст записи" rows="3"></textarea>
+            <textarea class="form-control shadow" id="exampleFormControlTextarea1" placeholder="Текст записи" rows="3"></textarea>
           </div>
           <div class="col-2">
             <button type="submit" class="btn btn-primary mb-3">Отправит</button>
