@@ -69,11 +69,14 @@ section.content-s{
 }
 .add-message input{
     margin-bottom: 13px;
+    
 }
 .add-message textarea{
-    margin-bottom: 28px;
+    margin-bottom: 13px;
+    
 }
-.add-message button{
+.add-message button{ 
+    margin-top: 13px; 
     width: 100%;
     max-width: 150px;
 }
