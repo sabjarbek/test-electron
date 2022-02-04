@@ -29,9 +29,6 @@ $("#sendMessage").on("click", function(){
     });
 
 });
-$("statusButton").on("click", function(){    
-    red.style.cssText=`color: red !important;`;
-});
 
 
 /*
