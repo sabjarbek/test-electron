@@ -87,6 +87,22 @@
                         <input type="text" class="form-control" id="fourteenInput" name="fourteenInput">
                         <div  class="form-text">Maydonni to'g'ri to'ldiring</div>
                       </div>
+                      
+                      <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">&mu; – тоғ жинсига коронка тишларининг ишқаланиш коэффициенти.</label>
+                        <input type="text" class="form-control" id="sixteenInput" name="sixteenInput">
+                        <div  class="form-text">Maydonni to'g'ri to'ldiring</div>
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">n – коронканинг айланишлар частотаси, мин-1;</label>
+                        <input type="text" class="form-control" id="seventeenInput" name="seventeenInput">
+                        <div  class="form-text">Maydonni to'g'ri to'ldiring</div>
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">D – диаметр;</label>
+                        <input type="text" class="form-control" id="eighteenInput" name="eighteenInput">
+                        <div  class="form-text">Maydonni to'g'ri to'ldiring</div>
+                      </div>
                     <button type="button" id="button" class="btn btn-primary">Hisoblash</button>
                   </form>
             </div>
@@ -118,9 +134,12 @@
         form.tenInput.oninput = kem;
         form.elevenInput.oninput = kem;
         form.twelveInput.oninput = kem;
-        form.thirteenInput.oninput = kem;
+        //form.thirteenInput.oninput = kem;
         form.fourteenInput.oninput = kem;
         form.fifteenInput.oninput = kem;
+        form.sixteenInput.oninput = kem;
+        form.seventeenInput.oninput = kem;
+        form.eighteenInput.oninput = kem;
 
         
         function kem() {
@@ -136,17 +155,23 @@
           let tenInput = Number(form.tenInput.value);
           let elevenInput = Number(form.elevenInput.value);
           let twelveInput = Number(form.twelveInput.value);
-          let thirteenInput = Number(form.thirdInput.value);
+          //let thirteenInput = Number(form.thirdInput.value);
           let fourteenInput = Number(form.fourteenInput.value);
           let fifteenInput = Number(form.fifteenInput.value);
+          let sixteenInput = Number(form.sixteenInput.value);
+          let seventeenInput = Number(form.seventeenInput.value);
+          let eighteenInput = Number(form.eighteenInput.value);
 
           let result1 = firstInput/(fifteenInput*thirdInput);
           let result2 = 1/(fourthInput*secondInput);
           let result3 = seventhInput*eighthInput/ninethInput;
           let result4 = 1/(2*fivethInput*sixthInput);
           let result5 = (result1+result2)*result3 +result4;
-          let result6 = result5*Math.pow(10,-3)*
-            console.log(result3);
+          let result6 = result5*Math.pow(10,-3)*sixteenInput*twelveInput*seventeenInput*eighteenInput;
+          let result7 = tenInput*elevenInput/(2*fivethInput);
+          let result10 = result6+result7+fourteenInput;
+
+            console.log(result10);
 
 
           document.getElementById('result').innerHTML = result10;
