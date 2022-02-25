@@ -1,6 +1,7 @@
 
 <?php
-
+echo "hello"
+/*
 $link = mysqli_connect("localhost", "mysql", "", "message_table");
 
 // Check connection
@@ -15,5 +16,5 @@ if(mysqli_query($link, $sql)){
 }
 // Close connection
 mysqli_close($link);
-
+*/
 ?>
